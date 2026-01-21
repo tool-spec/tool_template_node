@@ -2,9 +2,9 @@ tools:
   foobar:
     title: Foo Bar
     description: A dummy tool to exemplify the YAML file
-    # deleted this field - version: 0.1
+    command: "node run.js"
     parameters:
-      foo_int: 
+      foo_int:
         type: integer
       foo_float:
         type: float
@@ -19,14 +19,10 @@ tools:
       foo_array:
         type: integer
         array: true
-      foo_matrix:
-        type: asset # changed from file
-      foo_csv:
-        type: asset # changed from file
-    data:     # added section to descrive files more explicitly
+    data:
       foo_matrix:
         extension: dat
-        description: A matrix file that can be read by numpy
+        description: A matrix file
       foo_csv:
         extension: csv
-        description: A standard formatted CSV file, for autoloading using pandas
+        description: A CSV file
