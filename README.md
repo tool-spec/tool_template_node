@@ -1,6 +1,6 @@
 # tool_template_node
 
-This is the template for a generic containerized NodeJS tool following the [Tool Specification](https://vforwater.github.io/tool-specs/) for reusable research software using Docker.
+This is the template for a generic containerized NodeJS tool following the [Tool Specification](https://tool-spec.github.io/tool-specs/) for reusable research software using Docker.
 
 This template can be used to generate new Github repositories from it.
 
@@ -10,13 +10,13 @@ scientists might be used to from frontend development.
 
 ## How generic?
 
-Tools using this template can be run by the [toolbox-runner](https://github.com/hydrocode-de/tool-runner). 
+Tools using this template can be run by the [toolbox-runner](https://github.com/tool-spec/tool-runner). 
 That is only convenience, the tools implemented using this template are independent of any framework.
 
 The main idea is to implement a common file structure inside container to load inputs and outputs of the 
-tool. The template shares this structures with the [R template](https://github.com/vforwater/tool_template_r),
-[Python template](https://github.com/vforwater/tool_template_python)
-and [Octave template](https://github.com/vforwater/tool_template_octave), but can be mimiced in any container.
+tool. The template shares this structures with the [R template](https://github.com/tool-spec/tool_template_r),
+[Python template](https://github.com/tool-spec/tool_template_python)
+and [Octave template](https://github.com/tool-spec/tool_template_octave), but can be mimiced in any container.
 
 Each container needs at least the following structure:
 
@@ -43,7 +43,7 @@ You can build the image from within the root of this repo by
 docker build -t tbr_node_tempate .
 ```
 
-Use any tag you like. If you want to run and manage the container with [toolbox-runner](https://github.com/hydrocode-de/tool-runner)
+Use any tag you like. If you want to run and manage the container with [toolbox-runner](https://github.com/tool-spec/tool-runner)
 they should be prefixed by `tbr_` to be recognized. 
 
 Alternatively, the contained `.github/workflows/docker-image.yml` will build the image for you 
