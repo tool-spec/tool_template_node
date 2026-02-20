@@ -1,5 +1,8 @@
 # tool_template_node
 
+[![Docker Image CI](https://github.com/tool-spec/tool_template_node/actions/workflows/docker-image.yml/badge.svg)](https://github.com/tool-spec/tool_template_node/actions/workflows/docker-image.yml)
+[![DOI](https://zenodo.org/badge/564802876.svg)](https://doi.org/10.5281/zenodo.7892415)
+
 This is the template for a generic containerized NodeJS tool following the [Tool Specification](https://tool-spec.github.io/tool-specs/) for reusable research software using Docker.
 
 This template can be used to generate new Github repositories from it.

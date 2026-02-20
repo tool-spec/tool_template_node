@@ -1,15 +1,14 @@
-const getParameter = require('js2args');
+import { getParameters, getData } from "./parameters.js";
 
-// get the tool names
-const toolName = process.env.RUN_TOOL || 'foobar';
+const toolName = process.env.TOOL_RUN || "foobar";
 
-// load the parameters
-params = getParameter();
+const params = getParameters();
+const data = getData();
 
-// switch the toolName
-if (toolName === 'foobar') {
-   console.log('You are running the template directly. Please change the foobar function.')
-   console.log(params) 
+if (toolName === "foobar") {
+  console.log("You are running the template directly. Please change the foobar function.");
+  console.log(params);
+  console.log(data);
 } else {
-    console.error(`The toolname ${toolName} is not recognized. Did you forget to implement it?`)
+  console.error(`The toolname ${toolName} is not recognized. Did you forget to implement it?`);
 }

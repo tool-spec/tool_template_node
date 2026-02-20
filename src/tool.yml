@@ -2,6 +2,7 @@ tools:
   foobar:
     title: Foo Bar
     description: A dummy tool to exemplify the YAML file
+    command: "node run.js"
     # deleted this field - version: 0.1
     parameters:
       foo_int: 

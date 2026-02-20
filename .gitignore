@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# gotap-generated bindings (built during Docker build)
+src/parameters.js
