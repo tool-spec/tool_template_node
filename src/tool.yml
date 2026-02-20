@@ -20,11 +20,7 @@ tools:
       foo_array:
         type: integer
         array: true
-      foo_matrix:
-        type: asset # changed from file
-      foo_csv:
-        type: asset # changed from file
-    data:     # added section to descrive files more explicitly
+    data:
       foo_matrix:
         extension: dat
         description: A matrix file that can be read by numpy
